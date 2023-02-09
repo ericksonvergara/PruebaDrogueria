@@ -1,0 +1,22 @@
+<table class="default">
+  <tr scope="row">
+    <th>#</th>
+      <th>medicamento</th>
+      <th>cantidad</th>
+      <th>valorUnitario</th>
+      <th>valorTotal</th>
+      <th>idMedicamento</th>
+      <th>fecha</th>
+  </tr>
+
+  <tr *ngFor="let venta of ventas; let i = index">
+    <td>{{i+1}}</td>
+    <td>{{venta.medicamento}}</td>
+    <td>{{venta.cantidad}}</td>
+    <td>{{venta.valorUnitario}}</td>
+    <td>{{venta.valorTotal}}</td>
+    <td>{{venta.idMedicamento}}</td>
+    <td>{{venta.fecha | date: 'short'}}</td>
+  </tr>
+</table>
+

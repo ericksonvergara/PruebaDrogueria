@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { CreateMedicamentosComponent } from './components/create-medicamentos/create-medicamentos.component';
 import { MedicamentosComponent } from './components/medicamentos/medicamentos.component';
 import { HttpClientModule } from '@angular/common/http';
+import { VentasComponent } from './components/ventas/ventas.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CreateMedicamentosComponent,
-    MedicamentosComponent
+    MedicamentosComponent,
+    VentasComponent
   ],
   imports: [
     BrowserModule,
