@@ -1,0 +1,45 @@
+<!-- <table class="collapse">
+    <tr>
+      <th>#</th>
+      <th>Nombre</th>
+      <th>laboratorio de fabricacion</th>
+      <th>feha de creacion</th>
+      <th>feha de vencimiento</th>
+      <th>cantidad stock</th>
+      <th>Valor unitario</th>
+    </tr>
+
+  <tr *ngFor="let medicamento of medicamentos; let i = index">
+    <td>{{i+1}}</td>
+    <td>{{medicamento.nombre}}</td>
+    <td>{{medicamento.laboratorioFabrica}}</td>
+    <td>{{medicamento.fechaFabricacion | date:'short'}}</td>
+    <td>{{medicamento.fechaVencimiento | date: 'short'}}</td>
+    <td>{{medicamento.cantidadStock}}</td>
+    <td>{{medicamento.valorUnitario}}</td>
+  </tr>
+</table> -->
+
+<table class="default">
+
+  <tr scope="row">
+    <th>#</th>
+      <th>Nombre</th>
+      <th>laboratorio de fabricacion</th>
+      <th>feha de creacion</th>
+      <th>feha de vencimiento</th>
+      <th>cantidad stock</th>
+      <th>Valor unitario</th>
+  </tr>
+
+  <tr *ngFor="let medicamento of medicamentos; let i = index">
+    <td>{{i+1}}</td>
+    <td>{{medicamento.nombre}}</td>
+    <td>{{medicamento.laboratorioFabrica}}</td>
+    <td>{{medicamento.fechaFabricacion | date:'short'}}</td>
+    <td>{{medicamento.fechaVencimiento | date: 'short'}}</td>
+    <td>{{medicamento.cantidadStock}}</td>
+    <td>{{medicamento.valorUnitario}}</td>
+  </tr>
+</table>
+
